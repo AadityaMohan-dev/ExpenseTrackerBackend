@@ -31,4 +31,14 @@ public class UserController {
     public ResponseEntity<List<UserResponseDTO>> getAllUsers() {
         return ResponseEntity.ok(userService.getAllUsers());
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteUserById(@PathVariable long id){
+        return ResponseEntity.ok(userService.deleteUser(id));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<UserResponseDTO> updateUserDetails(@PathVariable long id, @RequestBody UserRequestDTO userRequestDTO){
+        return ResponseEntity.ok(userService.updateUserDetails(id,userRequestDTO));
+    }
 }

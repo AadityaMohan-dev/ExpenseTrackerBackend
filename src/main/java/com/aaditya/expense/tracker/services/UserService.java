@@ -11,4 +11,9 @@ public interface UserService {
     UserResponseDTO getUserById(long id);
 
     List<UserResponseDTO> getAllUsers();
+
+    String deleteUser(long id);
+
+    UserResponseDTO updateUserDetails(long id, UserRequestDTO userRequestDTO);
+
 }

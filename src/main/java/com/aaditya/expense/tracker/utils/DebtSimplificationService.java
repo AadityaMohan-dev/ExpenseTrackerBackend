@@ -1,4 +1,4 @@
-package com.aaditya.expense.tracker.services;
+package com.aaditya.expense.tracker.utils;
 
 import com.aaditya.expense.tracker.model.Groups;
 import com.aaditya.expense.tracker.model.Settlement;

@@ -15,7 +15,7 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "groups")
+@Table(name = "expense_groups")
 public class Groups {
 
     @Id

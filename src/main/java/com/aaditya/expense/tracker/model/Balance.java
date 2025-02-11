@@ -24,5 +24,5 @@ public class Balance {
     @JoinColumn(name = "group_id", nullable = false)
     private Groups group;
 
-    private double amount; // Positive means the user is owed, negative means the user owes.
+    private double amount;
 }
